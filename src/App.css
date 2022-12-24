@@ -1,0 +1,5 @@
+main {
+  background: url(./assets/images/bg-pattern.svg), var(--very-pale-blue);
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
