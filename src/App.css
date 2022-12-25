@@ -1,6 +1,7 @@
 main {
   background: url(./assets/images/bg-pattern.svg), var(--very-pale-blue);
   background-repeat: no-repeat;
+  background-size: contain;
   min-height: 100vh;
 }
 
@@ -186,5 +187,21 @@ article {
   }
   .article__benefits li {
     justify-content: flex-start;
+  }
+
+  .article__pricing {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    align-items: center;
+  }
+
+  .MuiSlider-root {
+    grid-column: 1 / span 2;
+  }
+
+  .article__pricing p:last-child {
+    grid-column: 2;
+    grid-row: 1;
   }
 }
